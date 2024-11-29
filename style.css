@@ -1,0 +1,250 @@
+/* General Styling */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f6f8fa, #e9ecef);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #00b894, #55efc4);
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.hero .content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #00b894;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background: #00b894;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Benefits Section */
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item h3 {
+    font-size: 1.4rem;
+    color: #00b894;
+}
+
+/* Partners Section */
+.partners-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.partner {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.partner:hover {
+    transform: translateY(-5px);
+    background-color: #f6f8fa;
+}
+
+/* Scroll Animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+.cta-btn {
+    padding: 1rem 2rem;
+    background: #00b894;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #55efc4;
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.member {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+.member .circle {
+    width: 80px;
+    height: 80px;
+    background: #00b894;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+}
+
+/* FAQ Section */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* In-Depth Benefits Section */
+.in-depth-benefits {
+    background: #f6f8fa;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.in-depth-benefits h2 {
+    font-size: 2rem;
+    color: #00b894;
+    margin-bottom: 2rem;
+}
+
+.in-depth-benefits p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partners-list {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.2rem;
+    }
+}
